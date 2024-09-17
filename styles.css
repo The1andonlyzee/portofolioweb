@@ -1,12 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #828282;
+    /* background-color: #828282; */
+    /* background-image: url('ellazakyselamanya.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* why is this need to be different body? saran gpt sih */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* filter: brightness(70%); */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pemandangan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+/* tbh i dont really understand this */
+    opacity: 0.5; 
+    filter: brightness(50%);
 }
 
 .container {
@@ -21,6 +43,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     position: relative;
+    /* msi blum menger position */
 }
 
 #titlesad {
