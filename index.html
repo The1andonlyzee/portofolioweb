@@ -1,57 +1,28 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zaky's Profile</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Lesgo</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="header">
-        <img src="ellazakyselamanya.jpg" alt="Profile Picture" />
-        <h1>Zaky</h1>
-        <div class="lol">
-            <span> Tech Enthusiast</span> | 
-            <span>Website Development Enthusiast</span> | 
-            <span>Network Engineering Enthusiast</span> | 
-            <span>Undergraduate Informatics Engineering Student</span>
-        </div>
-      </div>
-      <div class="content">
-        <h2>About Me</h2>
-        <p>
-          3rd year Undergraduate Informatics Engineering Student at Hasanuddin University, currently pursuing knowledge about website development and
-          mobile development. 
-        </p>
-
-        <h2>Contact</h2>
-        <p>Email: zakyhafizzany04@gmail.com</p>
-        <p>Phone: +62 812 4115 9282</p>
-        
-        <h2>Skill</h2>
-        <ul>
-            <li>Python Basic</li>
-            <li>Basic HTML</li>
-            <li>Networking Basic</li>
-        </ul>
-
-
-        <h2>Study Background</h2>
-        <ul>
-            <li>SD Al-Azhar Makassar</li>
-            <li>MTsN 1 Makassar</li>
-            <li>SMAN 05 GOWA</li>
-            <li>currently studying at Hasanuddin University</li>
-        </ul>
-      </div>
-      <div class="footer">
-        <div class="link">
-            <a href="https://www.linkedin.com/in/zaky-hafizzany-a60020273/"
-              >LinkedIn</a>
-        |   <a href="https://github.com/The1andonlyzee">GitHub</a>
-        </div>
-      </div>
+        <h1 id="titlesad">Sedih Mulu</h1>
+        <h2 id="sad">I hope you're happy
+            But not like how you were with me
+            I'm selfish, I know, I can't let you go
+            So find someone great but don't find no one better
+        </h2>
+        <button id="jangansad">Tindis pls</button>
     </div>
-  </body>
+    <script>
+        $('#jangansad').click(() => {
+            $('#sad').text('Well, good for you, you look happy and healthy Not me, if you ever cared to ask Good for you, youre doing great out there without me, baby God, I wish that I could do that')
+            $('#titlesad').text('Nah gitu dong')
+        })
+    </script>
+    
+    
+</body>
 </html>
