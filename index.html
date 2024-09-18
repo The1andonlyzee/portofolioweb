@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
     <div class="container">
         <h1 id="titlesad">Sedih Mulu</h1>
         <h2 id="sad">I hope you're happy
@@ -16,10 +17,22 @@
         </h2>
         <button id="jangansad">Tindis pls</button>
     </div>
+
     <script>
-        $('#jangansad').click(() => {
+        var index = 0;
+        $('#jangansad').click(function() {
+            if(index == 0 ){
             $('#sad').text('Well, good for you, you look happy and healthy Not me, if you ever cared to ask Good for you, youre doing great out there without me, baby God, I wish that I could do that')
             $('#titlesad').text('Nah gitu dong')
+            $('#jangansad').text('Sadlagi')
+            index +=1;
+            }
+            else if(index==1){
+            $('#sad').text("I hope you're happy But not like how you were with me I'm selfish, I know, I can't let you go So find someone great but don't find no one better")
+            $('#titlesad').text('Sedih Mulu')
+            $('#jangansad').text('Tindis pls')
+            index=0;
+            }
         })
     </script>
     
